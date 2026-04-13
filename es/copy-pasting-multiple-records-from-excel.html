@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copiar y pegar varios registros desde Excel — ErpNg Docs</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <nav id="sidebar">
+    <span class="sidebar-title">ErpNg Docs</span>
+    <a class="home-link" href="../index.html">🏠 Inicio</a>
+    <details>
+  <summary>Introduction</summary>
+  <div class="section-links">
+      <a href="introduction.html">Introduction</a>
+      <a href="user/manual/why-ERP.html">Why Erp</a>
+      <a href="user/manual/do-i-need-an-erp.html">Do I Need An Erp</a>
+      <a href="user/manual/open-source.html">Open Source</a>
+      <a href="user/manual/concepts-and-terms.html">Concepts And Terms</a>
+      <a href="user/manual/setting-up.html">Setting Up</a>
+  </div>
+</details>
+<details>
+  <summary>Setup</summary>
+  <div class="section-links">
+      <a href="user/manual/company-setup.html">Company Setup</a>
+      <a href="user/manual/country.html">Country</a>
+      <a href="user/manual/core-settings.html">Core Settings</a>
+  </div>
+</details>
+<details>
+  <summary>Data Management</summary>
+  <div class="section-links">
+    <details>
+      <summary>Import</summary>
+      <div class="section-links">
+      <a href="user/manual/data-import.html">Data Import</a>
+      <a href="user/manual/chart-of-accounts-importer.html">Chart Of Accounts Importer</a>
+      </div>
+    </details>
+    <details>
+      <summary>Export</summary>
+      <div class="section-links">
+      <a href="user/manual/data-export.html">Data Export</a>
+      <a href="user/manual/download-backup.html">Download Backup</a>
+      </div>
+    </details>
+    <details>
+      <summary>Bulk Operations</summary>
+      <div class="section-links">
+      <a href="user/manual/bulk-update.html">Bulk Update</a>
+      <a href="user/manual/bulk-rename.html">Bulk Rename</a>
+      <a href="user/manual/delete_company_transactions.html">Delete_Company_Transactions</a>
+      </div>
+    </details>
+    <details>
+      <summary>Personal Data</summary>
+      <div class="section-links">
+      <a href="user/manual/personal-data-download.html">Personal Data Download</a>
+      <a href="user/manual/personal-data-deletion.html">Personal Data Deletion</a>
+      </div>
+    </details>
+    <details>
+      <summary>Help Articles</summary>
+      <div class="section-links">
+      <a href="user/manual/export-data-for-specific-year-or-filter.html">Export Data For Specific Year Or Filter</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Users and Permissions</summary>
+  <div class="section-links">
+    <details>
+      <summary>User Management</summary>
+      <div class="section-links">
+      <a href="user/manual/adding-users.html">Adding Users</a>
+      <a href="user/manual/role-based-permissions.html">Role Based Permissions</a>
+      <a href="user/manual/user-permissions.html">User Permissions</a>
+      <a href="user/manual/administrator.html">Administrator</a>
+      <a href="user/manual/sharing.html">Sharing</a>
+      <a href="user/manual/change-password.html">Change Password</a>
+      <a href="user/manual/how-to-disable-users-in-the-erpnext-system.html">How To Disable Users In The Erpnext System</a>
+      </div>
+    </details>
+    <details>
+      <summary>Roles and Permissions</summary>
+      <div class="section-links">
+      <a href="user/manual/permissions.html">Permissions</a>
+      <a href="user/manual/role-and-role-profile.html">Role And Role Profile</a>
+      <a href="user/manual/role-permission-for-page-and-report.html">Role Permission For Page And Report</a>
+      <a href="user/manual/changing-the-properties-of-a-field-based-on-role.html">Changing The Properties Of A Field Based On Role</a>
+      <a href="user/manual/access-log.html">Access Log</a>
+      <a href="user/manual/limited-user.html">Limited User</a>
+      <a href="user/manual/managing-perm-level.html">Managing Perm Level</a>
+      </div>
+    </details>
+    <details>
+      <summary>Help Articles</summary>
+      <div class="section-links">
+      <a href="user/manual/setup-two-factor-authentication.html">Setup Two Factor Authentication</a>
+      <a href="user/manual/how-to-change-a-users-email-id.html">How To Change A Users Email Id</a>
+      <a href="user/manual/difference-between-system-user-and-website-user.html">Difference Between System User And Website User</a>
+      <a href="user/manual/setting-up-email-signature-in-erpnext.html">Setting Up Email Signature In Erpnext</a>
+      <a href="user/manual/how-to-grant-permissions-for-reports.html">How To Grant Permissions For Reports</a>
+      <a href="user/manual/user-permission-based-on-hierarchy.html">User Permission Based On Hierarchy</a>
+      <a href="user/manual/how-to-fix-the-reached-maximum-user-limit-for-your-subscription-issue.html">How To Fix The Reached Maximum User Limit For Your Subscription Issue</a>
+      <a href="user/manual/perm-level-error-in-permission-manager.html">Perm Level Error In Permission Manager</a>
+      <a href="user/manual/report-permission-error.html">Report Permission Error</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Accounting</summary>
+  <div class="section-links">
+    <details>
+      <summary>Introduction</summary>
+      <div class="section-links">
+      <a href="user/manual/opening-and-closing.html">Opening And Closing</a>
+      <a href="user/manual/accounting-masters.html">Accounting Masters</a>
+      <a href="user/manual/taxes.html">Taxes</a>
+      </div>
+    </details>
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/fiscal-year.html">Fiscal Year</a>
+      <a href="user/manual/opening-invoice-creation-tool.html">Opening Invoice Creation Tool</a>
+      <a href="user/manual/opening-balance.html">Opening Balance</a>
+      <a href="user/manual/setting-up-taxes.html">Setting Up Taxes</a>
+      </div>
+    </details>
+    <details>
+      <summary>Chart of Accounts</summary>
+      <div class="section-links">
+      <a href="user/manual/chart-of-accounts.html">Chart Of Accounts</a>
+      </div>
+    </details>
+    <details>
+      <summary>Taxes & Compliance</summary>
+      <div class="section-links">
+      <a href="user/manual/tax-category.html">Tax Category</a>
+      <a href="user/manual/finance-book.html">Finance Book</a>
+      <a href="user/manual/tax-rule.html">Tax Rule</a>
+      <a href="user/manual/item-tax-template.html">Item Tax Template</a>
+      <a href="user/manual/types-in-tax-template.html">Types In Tax Template</a>
+      <a href="user/manual/purchase-taxes-and-charges-template.html">Purchase Taxes And Charges Template</a>
+      <a href="user/manual/sales-taxes-and-charges-template.html">Sales Taxes And Charges Template</a>
+      <a href="user/manual/tax-withholding-category.html">Tax Withholding Category</a>
+      </div>
+    </details>
+    <details>
+      <summary>Sales</summary>
+      <div class="section-links">
+      <a href="user/manual/sales-invoice.html">Sales Invoice</a>
+      <a href="user/manual/credit-note.html">Credit Note</a>
+      <a href="user/manual/dunning.html">Dunning</a>
+      <a href="user/manual/loyalty-program.html">Loyalty Program</a>
+      </div>
+    </details>
+    <details>
+      <summary>Purchase</summary>
+      <div class="section-links">
+      <a href="user/manual/purchase-invoice.html">Purchase Invoice</a>
+      <a href="user/manual/debit-note.html">Debit Note</a>
+      </div>
+    </details>
+    <details>
+      <summary>Banking</summary>
+      <div class="section-links">
+      <a href="user/manual/banking-in-erpnext.html">Banking In Erpnext</a>
+      <a href="user/manual/bank.html">Bank</a>
+      <a href="user/manual/bank-account.html">Bank Account</a>
+      <a href="user/manual/invoice_discounting.html">Invoice_Discounting</a>
+      </div>
+    </details>
+    <details>
+      <summary>Payments</summary>
+      <div class="section-links">
+      <a href="user/manual/payment-request.html">Payment Request</a>
+      <a href="accounting/payment-order.html">Payment Order</a>
+      <a href="user/manual/payment-entry.html">Payment Entry</a>
+      <a href="user/manual/payment_ledger.html">Payment_Ledger</a>
+      <a href="user/manual/journals-and-payments-payment-terms.html">Journals And Payments Payment Terms</a>
+      <a href="user/manual/payment-terms-template.html">Payment Terms Template</a>
+      <a href="user/manual/payment-reconciliation.html">Payment Reconciliation</a>
+      <a href="user/manual/semi-auto-payment-reconciliation.html">Semi Auto Payment Reconciliation</a>
+      </div>
+    </details>
+    <details>
+      <summary>General Ledger & Journal</summary>
+      <div class="section-links">
+      <a href="user/manual/journal-entry.html">Journal Entry</a>
+      <a href="user/manual/journal-entry-template.html">Journal Entry Template</a>
+      <a href="user/manual/inter-company-journal-entry.html">Inter Company Journal Entry</a>
+      </div>
+    </details>
+    <details>
+      <summary>Deferred Accounting</summary>
+      <div class="section-links">
+      <a href="user/manual/deferred-revenue.html">Deferred Revenue</a>
+      <a href="user/manual/deferred-expense.html">Deferred Expense</a>
+      <a href="user/manual/deferred-accounting.html">Deferred Accounting</a>
+      <a href="user/manual/process-deferred-accounting.html">Process Deferred Accounting</a>
+      </div>
+    </details>
+    <details>
+      <summary>Multi Currency</summary>
+      <div class="section-links">
+      <a href="user/manual/currency.html">Currency</a>
+      <a href="user/manual/currency-exchange.html">Currency Exchange</a>
+      <a href="user/manual/multi-currency-accounting.html">Multi Currency Accounting</a>
+      <a href="user/manual/multi-currency-setup.html">Multi Currency Setup</a>
+      <a href="user/manual/exchange-rate-revaluation.html">Exchange Rate Revaluation</a>
+      </div>
+    </details>
+    <details>
+      <summary>Cost Center & Budgeting</summary>
+      <div class="section-links">
+      <a href="user/manual/cost-center.html">Cost Center</a>
+      <a href="user/manual/cost_center_allocation.html">Cost_Center_Allocation</a>
+      <a href="user/manual/accounting-dimensions.html">Accounting Dimensions</a>
+      <a href="accounting/budgeting/budget.html">Budget</a>
+      <a href="accounting/budgeting/budget-revision.html">Budget Revision</a>
+      <a href="accounting/budgeting/budget-variance-report.html">Budget Variance Report</a>
+      </div>
+    </details>
+    <details>
+      <summary>Subscription</summary>
+      <div class="section-links">
+      <a href="user/manual/subscription.html">Subscription</a>
+      <a href="user/manual/subscription-plan.html">Subscription Plan</a>
+      <a href="user/manual/subscription-management.html">Subscription Management</a>
+      <a href="user/manual/how-to-upgrade-subscription-plan-and-buy-add-ons.html">How To Upgrade Subscription Plan And Buy Add Ons</a>
+      <a href="user/manual/update-subscription-payment-method.html">Update Subscription Payment Method</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/accounting-reports.html">Accounting Reports</a>
+      <a href="user/manual/general-ledger.html">General Ledger</a>
+      <a href="user/manual/accounts-receivable-and-payable.html">Accounts Receivable And Payable</a>
+      <a href="user/manual/financial-report-template.html">Financial Report Template</a>
+      </div>
+    </details>
+    <details>
+      <summary>Settings</summary>
+      <div class="section-links">
+      <a href="user/manual/accounts-settings.html">Accounts Settings</a>
+      <a href="user/manual/subscription-settings.html">Subscription Settings</a>
+      <a href="user/manual/currency-exchange-settings.html">Currency Exchange Settings</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Assets</summary>
+  <div class="section-links">
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/asset-category.html">Asset Category</a>
+      <a href="user/manual/asset-location.html">Asset Location</a>
+      <a href="user/manual/purchasing-an-asset.html">Purchasing An Asset</a>
+      <a href="user/manual/asset-asset.html">Asset Asset</a>
+      </div>
+    </details>
+    <details>
+      <summary>Depreciation</summary>
+      <div class="section-links">
+      <a href="user/manual/asset-depreciation.html">Asset Depreciation</a>
+      <a href="user/manual/pro-rata-based-depreciation-for-slm.html">Pro Rata Based Depreciation For Slm</a>
+      <a href="user/manual/asset-shift-allocation.html">Asset Shift Allocation</a>
+      </div>
+    </details>
+    <details>
+      <summary>Maintenance</summary>
+      <div class="section-links">
+      <a href="user/manual/asset-maintenance.html">Asset Maintenance</a>
+      <a href="user/manual/asset-maintenance-team.html">Asset Maintenance Team</a>
+      <a href="user/manual/asset-maintenance-log.html">Asset Maintenance Log</a>
+      <a href="user/manual/asset-movement.html">Asset Movement</a>
+      <a href="user/manual/asset-repair.html">Asset Repair</a>
+      <a href="user/manual/asset-value-adjustment.html">Asset Value Adjustment</a>
+      <a href="user/manual/asset-capitalization.html">Asset Capitalization</a>
+      </div>
+    </details>
+    <details>
+      <summary>Disposal</summary>
+      <div class="section-links">
+      <a href="user/manual/selling-an-asset.html">Selling An Asset</a>
+      <a href="user/manual/scrapping-an-asset.html">Scrapping An Asset</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/asset-reports.html">Asset Reports</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Buying</summary>
+  <div class="section-links">
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/supplier-essentials.html">Supplier Essentials</a>
+      <a href="user/manual/supplier-group.html">Supplier Group</a>
+      <a href="user/manual/supplier.html">Supplier</a>
+      <a href="user/manual/buying-settings.html">Buying Settings</a>
+      </div>
+    </details>
+    <details>
+      <summary>Features</summary>
+      <div class="section-links">
+      <a href="user/manual/purchase-transactions.html">Purchase Transactions</a>
+      <a href="user/manual/material-request.html">Material Request</a>
+      <a href="v12/user/manual/en/stock/purchase-return.html">Purchase Return</a>
+      <a href="user/manual/request-for-quotation.html">Request For Quotation</a>
+      <a href="user/manual/supplier-quotation.html">Supplier Quotation</a>
+      <a href="user/manual/purchase-order.html">Purchase Order</a>
+      <a href="user/manual/how-to-create-a-supplier-quotation-through-the-supplier-portal.html">How To Create A Supplier Quotation Through The Supplier Portal</a>
+      <a href="user/manual/supplier-scorecard.html">Supplier Scorecard</a>
+      <a href="user/manual/customer-portal.html">Customer Portal</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/buying_reports.html">Buying_Reports</a>
+      <a href="user/manual/procurement-tracker-report.html">Procurement Tracker Report</a>
+      </div>
+    </details>
+    <details>
+      <summary>Help Articles</summary>
+      <div class="section-links">
+      <a href="user/manual/maintaining-suppliers-part-no-in-item.html">Maintaining Suppliers Part No In Item</a>
+      <a href="user/manual/purchasing-in-different-unit.html">Purchasing In Different Unit</a>
+      <a href="user/manual/amending-purchase-order-after-submit.html">Amending Purchase Order After Submit</a>
+      <a href="user/manual/purchase-receipt.html">Purchase Receipt</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Selling</summary>
+  <div class="section-links">
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/selling-essentials.html">Selling Essentials</a>
+      <a href="user/manual/customer-group.html">Customer Group</a>
+      <a href="user/manual/territory.html">Territory</a>
+      <a href="user/manual/contact.html">Contact</a>
+      <a href="user/manual/address.html">Address</a>
+      <a href="user/manual/address-template.html">Address Template</a>
+      <a href="user/manual/terms-and-conditions.html">Terms And Conditions</a>
+      <a href="user/manual/selling-settings.html">Selling Settings</a>
+      </div>
+    </details>
+    <details>
+      <summary>Features</summary>
+      <div class="section-links">
+      <a href="user/manual/selling-transactions.html">Selling Transactions</a>
+      <a href="user/manual/quotation.html">Quotation</a>
+      <a href="user/manual/sales-order.html">Sales Order</a>
+      <a href="user/manual/blanket-order.html">Blanket Order</a>
+      <a href="user/manual/drop-shipping-in-erpnext.html">Drop Shipping In Erpnext</a>
+      <a href="user/manual/credit-limit.html">Credit Limit</a>
+      <a href="user/manual/sales-partner.html">Sales Partner</a>
+      <a href="user/manual/sales-return.html">Sales Return</a>
+      <a href="user/manual/inter-company-invoices.html">Inter Company Invoices</a>
+      <a href="user/manual/calculate-incentive-for-sales-team.html">Calculate Incentive For Sales Team</a>
+      <a href="user/manual/promotional-scheme.html">Promotional Scheme</a>
+      <a href="user/manual/sales-integration.html">Sales Integration</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/sales-analytics.html">Sales Analytics</a>
+      </div>
+    </details>
+    <details>
+      <summary>Help Articles</summary>
+      <div class="section-links">
+      <a href="user/manual/sales-invoice-without-an-item.html">Sales Invoice Without An Item</a>
+      <a href="user/manual/sales-person-target-allocation.html">Sales Person Target Allocation</a>
+      <a href="user/manual/setting-company-sales-goal.html">Setting Company Sales Goal</a>
+      <a href="user/manual/setting-up-buy-1-get-1-free-pricing-rule.html">Setting Up Buy 1 Get 1 Free Pricing Rule</a>
+      <a href="user/manual/Selling-in-different-UOM.html">Selling In Different Uom</a>
+      <a href="user/manual/need-to-change-rate-of-items-during-sales-cycle.html">Need To Change Rate Of Items During Sales Cycle</a>
+      <a href="user/manual/assistance-sales-purchase-between-companies.html">Assistance Sales Purchase Between Companies</a>
+      <a href="user/manual/request-for-raw-materials-from-sales-order.html">Request For Raw Materials From Sales Order</a>
+      <a href="user/manual/applying-discount.html">Applying Discount</a>
+      <a href="user/manual/amending-sales-order-after-submit.html">Amending Sales Order After Submit</a>
+      <a href="user/manual/close-sales-order.html">Close Sales Order</a>
+      <a href="user/manual/how-to-short-close-multiple-orders-in-erpnext.html">How To Short Close Multiple Orders In Erpnext</a>
+      <a href="user/manual/incoterm-and-named-place.html">Incoterm And Named Place</a>
+      <a href="user/manual/sales-persons-in-the-sales-transactions.html">Sales Persons In The Sales Transactions</a>
+      <a href="user/manual/sales-return-use-cases.html">Sales Return Use Cases</a>
+      <a href="user/manual/adding-margin.html">Adding Margin</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Stock</summary>
+  <div class="section-links">
+    <details>
+      <summary>Items</summary>
+      <div class="section-links">
+      <a href="user/manual/item.html">Item</a>
+      <a href="user/manual/item-group.html">Item Group</a>
+      <a href="user/manual/uom.html">Uom</a>
+      <a href="user/manual/serial-and-batch.html">Serial And Batch</a>
+      <a href="user/manual/item-variants.html">Item Variants</a>
+      <a href="user/manual/item-attribute.html">Item Attribute</a>
+      <a href="user/manual/brand.html">Brand</a>
+      <a href="user/manual/manufacturer.html">Manufacturer</a>
+      </div>
+    </details>
+    <details>
+      <summary>Pricing</summary>
+      <div class="section-links">
+      <a href="user/manual/pricing.html">Pricing</a>
+      <a href="user/manual/price-lists.html">Price Lists</a>
+      <a href="user/manual/item-price.html">Item Price</a>
+      </div>
+    </details>
+    <details>
+      <summary>Warehouse</summary>
+      <div class="section-links">
+      <a href="user/manual/warehouse.html">Warehouse</a>
+      </div>
+    </details>
+    <details>
+      <summary>Features</summary>
+      <div class="section-links">
+      <a href="user/manual/stock-transactions.html">Stock Transactions</a>
+      <a href="user/manual/purchase-receipt.html">Purchase Receipt</a>
+      <a href="user/manual/delivery-note.html">Delivery Note</a>
+      <a href="user/manual/stock-entry.html">Stock Entry</a>
+      <a href="user/manual/product-bundle.html">Product Bundle</a>
+      <a href="user/manual/stock-reconciliation.html">Stock Reconciliation</a>
+      <a href="user/manual/stock-reservation.html">Stock Reservation</a>
+      <a href="user/manual/pricing-rule.html">Pricing Rule</a>
+      <a href="user/manual/batch.html">Batch</a>
+      <a href="user/manual/serial-no.html">Serial No</a>
+      <a href="user/manual/serial-and-batch-bundle.html">Serial And Batch Bundle</a>
+      <a href="user/manual/delivery-trip.html">Delivery Trip</a>
+      <a href="user/manual/stock-transactions-landed-cost-voucher.html">Stock Transactions Landed Cost Voucher</a>
+      <a href="user/manual/quality-inspection.html">Quality Inspection</a>
+      <a href="user/manual/pick-list.html">Pick List</a>
+      <a href="user/manual/putaway-rule.html">Putaway Rule</a>
+      <a href="user/manual/packing-slip.html">Packing Slip</a>
+      <a href="user/manual/opening-stock.html">Opening Stock</a>
+      <a href="user/manual/material-request.html">Material Request</a>
+      <a href="user/manual/inventory_dimension.html">Inventory_Dimension</a>
+      <a href="user/manual/managing-batch-wise-inventory.html">Managing Batch Wise Inventory</a>
+      <a href="user/manual/retain-sample-stock.html">Retain Sample Stock</a>
+      <a href="user/manual/auto-creation-of-material-request.html">Auto Creation Of Material Request</a>
+      <a href="user/manual/item-alternative.html">Item Alternative</a>
+      <a href="user/manual/shipment.html">Shipment</a>
+      <a href="user/manual/installation-note.html">Installation Note</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/stock-ledger.html">Stock Ledger</a>
+      <a href="user/manual/stock-level-report.html">Stock Level Report</a>
+      <a href="user/manual/quick-stock-balance.html">Quick Stock Balance</a>
+      <a href="user/manual/closing-stock-balance.html">Closing Stock Balance</a>
+      <a href="user/manual/stock-value-account-value-comparison.html">Stock Value Account Value Comparison</a>
+      <a href="stock-reposting.html">Stock Reposting</a>
+      <a href="serial-and-batch-traceability-report.html">Serial And Batch Traceability Report</a>
+      </div>
+    </details>
+    <details>
+      <summary>Settings</summary>
+      <div class="section-links">
+      <a href="user/manual/stock-settings.html">Stock Settings</a>
+      <a href="user/manual/stock-reposting-settings.html">Stock Reposting Settings</a>
+      <a href="repost-item-valuation.html">Repost Item Valuation</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Point of Sale</summary>
+  <div class="section-links">
+      <a href="user/manual/point-of-sale.html">Point Of Sale</a>
+      <a href="modules/erpnext/erpnext/modules/point-of-sale/pos-profile.html">Pos Profile</a>
+      <a href="modules/erpnext/erpnext/modules/point-of-sale/pos-invoice-consolidation.html">Pos Invoice Consolidation</a>
+  </div>
+</details>
+<details>
+  <summary>Manufacturing</summary>
+  <div class="section-links">
+    <details>
+      <summary>Introduction</summary>
+      <div class="section-links">
+      <a href="user/manual/manufacturing.html">Manufacturing</a>
+      <a href="user/manual/manufacturing-dashboard.html">Manufacturing Dashboard</a>
+      </div>
+    </details>
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/bill-of-material.html">Bill Of Material</a>
+      <a href="user/manual/workstation_type.html">Workstation_Type</a>
+      <a href="user/manual/operation.html">Operation</a>
+      <a href="user/manual/workstation.html">Workstation</a>
+      <a href="user/manual/routing.html">Routing</a>
+      </div>
+    </details>
+    <details>
+      <summary>Features</summary>
+      <div class="section-links">
+      <a href="user/manual/production-and-material-planning.html">Production And Material Planning</a>
+      <a href="user/manual/track-semi-finished-goods.html">Track Semi Finished Goods</a>
+      <a href="stock-reservation-for-work-order.html">Stock Reservation For Work Order</a>
+      <a href="stock-reservation-for-production-plan.html">Stock Reservation For Production Plan</a>
+      <a href="material-requirements-planning-mrp.html">Material Requirements Planning Mrp</a>
+      <a href="user/manual/capacity-planning.html">Capacity Planning</a>
+      <a href="user/manual/downtime-entry.html">Downtime Entry</a>
+      <a href="user/manual/subcontracting.html">Subcontracting</a>
+      </div>
+    </details>
+    <details>
+      <summary>Key DocTypes</summary>
+      <div class="section-links">
+      <a href="user/manual/production-plan.html">Production Plan</a>
+      <a href="user/manual/work-order.html">Work Order</a>
+      <a href="user/manual/job-card.html">Job Card</a>
+      <a href="user/manual/plant-floor.html">Plant Floor</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reports</summary>
+      <div class="section-links">
+      <a href="user/manual/manufacturing-reports.html">Manufacturing Reports</a>
+      <a href="user/manual/work-order-summary.html">Work Order Summary</a>
+      <a href="user/manual/bom-search.html">Bom Search</a>
+      <a href="user/manual/job-card-summary.html">Job Card Summary</a>
+      <a href="user/manual/bom-stock-report.html">Bom Stock Report</a>
+      <a href="user/manual/bom-operation-time.html">Bom Operation Time</a>
+      <a href="user/manual/bom_explorer.html">Bom_Explorer</a>
+      <a href="user/manual/open-work-orders.html">Open Work Orders</a>
+      <a href="user/manual/production-planning-report.html">Production Planning Report</a>
+      <a href="user/manual/production-analytics.html">Production Analytics</a>
+      <a href="user/manual/downtime-analysis.html">Downtime Analysis</a>
+      </div>
+    </details>
+    <details>
+      <summary>Settings</summary>
+      <div class="section-links">
+      <a href="user/manual/manufacturing-settings.html">Manufacturing Settings</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Quality</summary>
+  <div class="section-links">
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/quality_goal.html">Quality_Goal</a>
+      <a href="user/manual/quality_procedure.html">Quality_Procedure</a>
+      </div>
+    </details>
+    <details>
+      <summary>Features</summary>
+      <div class="section-links">
+      <a href="user/manual/quality_review.html">Quality_Review</a>
+      <a href="user/manual/quality_action.html">Quality_Action</a>
+      <a href="user/manual/non-conformance.html">Non Conformance</a>
+      <a href="user/manual/quality-feedback-template.html">Quality Feedback Template</a>
+      <a href="user/manual/quality_feedback.html">Quality_Feedback</a>
+      <a href="user/manual/quality_meeting.html">Quality_Meeting</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Projects</summary>
+  <div class="section-links">
+    <details>
+      <summary>Setup</summary>
+      <div class="section-links">
+      <a href="user/manual/project-type.html">Project Type</a>
+      <a href="user/manual/project-template.html">Project Template</a>
+      <a href="user/manual/activity-type.html">Activity Type</a>
+      <a href="user/manual/activity-cost.html">Activity Cost</a>
+      </div>
+    </details>
+    <details>
+      <summary>Project & Task</summary>
+      <div class="section-links">
+      <a href="user/manual/project.html">Project</a>
+      <a href="user/manual/tasks.html">Tasks</a>
+      <a href="user/manual/project-views.html">Project Views</a>
+      <a href="user/manual/project-update.html">Project Update</a>
+      <a href="user/manual/project-customer-portal.html">Project Customer Portal</a>
+      </div>
+    </details>
+    <details>
+      <summary>Timesheet & Billing</summary>
+      <div class="section-links">
+      <a href="user/manual/time-tracking.html">Time Tracking</a>
+      <a href="user/manual/timesheets.html">Timesheets</a>
+      <a href="user/manual/time-based-payout.html">Time Based Payout</a>
+      <a href="user/manual/sales-invoice-from-timesheet.html">Sales Invoice From Timesheet</a>
+      <a href="user/manual/salary-slip-from-timesheet.html">Salary Slip From Timesheet</a>
+      </div>
+    </details>
+    <details>
+      <summary>Costing & Expenses</summary>
+      <div class="section-links">
+      <a href="user/manual/project-costing.html">Project Costing</a>
+      <a href="user/manual/project-profitability.html">Project Profitability</a>
+      <a href="user/manual/project-expense-claims.html">Project Expense Claims</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Customization</summary>
+  <div class="section-links">
+      <a href="user/manual/custom-field.html">Custom Field</a>
+      <a href="user/manual/customize-form.html">Customize Form</a>
+      <a href="user/manual/document-title.html">Document Title</a>
+      <a href="user/manual/customizing-module-visibility.html">Customizing Module Visibility</a>
+      <a href="user/manual/setting-default-values-for-any-field-in-erpnext.html">Setting Default Values For Any Field In Erpnext</a>
+      <a href="user/manual/fetching-data-from-a-document.html">Fetching Data From A Document</a>
+      <a href="user/manual/how-to-add-master-link-and-fetch-data-from-the-same.html">How To Add Master Link And Fetch Data From The Same</a>
+      <a href="user/manual/customizing-data-visibility-in-child-table.html">Customizing Data Visibility In Child Table</a>
+      <a href="user/manual/customizing-sorting-order-in-the-list-view.html">Customizing Sorting Order In The List View</a>
+      <a href="user/manual/search-record-by-specific-field.html">Search Record By Specific Field</a>
+      <a href="user/manual/disable-rounded-total.html">Disable Rounded Total</a>
+      <a href="user/manual/document-title-with-multiple-fields.html">Document Title With Multiple Fields</a>
+      <a href="user/manual/editing-a-field-after-submission.html">Editing A Field After Submission</a>
+      <a href="user/manual/maximum-number-of-fields-in-a-form.html">Maximum Number Of Fields In A Form</a>
+      <a href="user/manual/client-scripts.html">Client Scripts</a>
+      <a href="user/manual/field-types.html">Field Types</a>
+      <a href="user/manual/geolocation-field.html">Geolocation Field</a>
+      <a href="user/manual/table-multiselect-field.html">Table Multiselect Field</a>
+      <a href="user/manual/dynamic-link-fields.html">Dynamic Link Fields</a>
+      <a href="user/manual/electronic-signature.html">Electronic Signature</a>
+      <a href="user/manual/creating-custom-link-field.html">Creating Custom Link Field</a>
+  </div>
+</details>
+<details>
+  <summary>Configurations</summary>
+  <div class="section-links">
+    <details>
+      <summary>Printing</summary>
+      <div class="section-links">
+      <a href="user/manual/print.html">Print</a>
+      <a href="user/manual/print-format.html">Print Format</a>
+      <a href="user/manual/print-format-builder.html">Print Format Builder</a>
+      <a href="user/manual/print-settings.html">Print Settings</a>
+      <a href="user/manual/print-style.html">Print Style</a>
+      <a href="user/manual/letter-head.html">Letter Head</a>
+      <a href="user/manual/print-headings.html">Print Headings</a>
+      <a href="user/manual/cheque-print-template.html">Cheque Print Template</a>
+      <a href="user/manual/raw-printing.html">Raw Printing</a>
+      <a href="user/manual/records-print-format.html">Records Print Format</a>
+      <a href="user/manual/custom-translations.html">Custom Translations</a>
+      </div>
+    </details>
+    <details>
+      <summary>Reporting</summary>
+      <div class="section-links">
+      <a href="user/manual/prepared-report.html">Prepared Report</a>
+      <a href="user/manual/making-custom-reports.html">Making Custom Reports</a>
+      <a href="user/manual/deleting-custom-reports.html">Deleting Custom Reports</a>
+      <a href="user/manual/letter-head-in-the-report.html">Letter Head In The Report</a>
+      <a href="user/manual/how-to-add-columns-in-the-standard-report-and-export.html">How To Add Columns In The Standard Report And Export</a>
+      </div>
+    </details>
+    <details>
+      <summary>Email & Notifications</summary>
+      <div class="section-links">
+      <a href="user/manual/email.html">Email</a>
+      <a href="user/manual/email-domain.html">Email Domain</a>
+      <a href="user/manual/email-account.html">Email Account</a>
+      <a href="user/manual/email-template.html">Email Template</a>
+      <a href="user/manual/email-digest.html">Email Digest</a>
+      <a href="user/manual/email-dropbox.html">Email Dropbox</a>
+      <a href="user/manual/email-inbox.html">Email Inbox</a>
+      <a href="user/manual/linking-emails-to-document.html">Linking Emails To Document</a>
+      <a href="user/manual/sending-email.html">Sending Email</a>
+      <a href="user/manual/auto-email-reports.html">Auto Email Reports</a>
+      <a href="user/manual/notifications.html">Notifications</a>
+      <a href="user/manual/document-follow.html">Document Follow</a>
+      <a href="user/manual/sms-setting.html">Sms Setting</a>
+      </div>
+    </details>
+    <details>
+      <summary>Workflows</summary>
+      <div class="section-links">
+      <a href="user/manual/workflows.html">Workflows</a>
+      <a href="user/manual/workflow.html">Workflow</a>
+      <a href="user/manual/workflow-state.html">Workflow State</a>
+      <a href="user/manual/workflow-actions.html">Workflow Actions</a>
+      <a href="user/manual/workflow-transition-tasks.html">Workflow Transition Tasks</a>
+      <a href="user/manual/authorization-rule.html">Authorization Rule</a>
+      </div>
+    </details>
+    <details>
+      <summary>Automation</summary>
+      <div class="section-links">
+      <a href="user/manual/automation.html">Automation</a>
+      <a href="user/manual/assignment-rule.html">Assignment Rule</a>
+      <a href="user/manual/auto-repeat.html">Auto Repeat</a>
+      <a href="user/manual/milestone-tracker.html">Milestone Tracker</a>
+      </div>
+    </details>
+    <details>
+      <summary>System</summary>
+      <div class="section-links">
+      <a href="user/manual/system-settings.html">System Settings</a>
+      <a href="user/manual/global-defaults.html">Global Defaults</a>
+      <a href="user/manual/session-defaults.html">Session Defaults</a>
+      <a href="user/manual/domain-settings.html">Domain Settings</a>
+      <a href="user/manual/document-naming-settings.html">Document Naming Settings</a>
+      <a href="user/manual/document-naming.html">Document Naming</a>
+      <a href="user/manual/module-settings.html">Module Settings</a>
+      <a href="user/manual/show-hide-modules.html">Show Hide Modules</a>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary>Integrations</summary>
+  <div class="section-links">
+      <a href="user/manual/erpnext_integration.html">Erpnext_Integration</a>
+      <a href="user/manual/google_settings.html">Google_Settings</a>
+      <a href="user/manual/ldap-integration.html">Ldap Integration</a>
+      <a href="user/manual/google_calendar.html">Google_Calendar</a>
+      <a href="user/manual/google_contacts.html">Google_Contacts</a>
+      <a href="user/manual/dropbox-backup.html">Dropbox Backup</a>
+      <a href="user/manual/google_maps.html">Google_Maps</a>
+      <a href="user/manual/google_drive.html">Google_Drive</a>
+      <a href="user/manual/aws_s3.html">Aws_S3</a>
+      <a href="user/manual/plaid_integration.html">Plaid_Integration</a>
+      <a href="user/manual/shopify_integration.html">Shopify_Integration</a>
+      <a href="user/manual/woocommerce_integration.html">Woocommerce_Integration</a>
+      <a href="user/manual/amazon_integration.html">Amazon_Integration</a>
+      <a href="user/manual/paypal-integration.html">Paypal Integration</a>
+      <a href="user/manual/razorpay-integration.html">Razorpay Integration</a>
+      <a href="user/manual/stripe-integration.html">Stripe Integration</a>
+      <a href="user/manual/gocardless-integration.html">Gocardless Integration</a>
+      <a href="user/manual/mpesa-integration.html">Mpesa Integration</a>
+  </div>
+</details>
+<details>
+  <summary>Regional</summary>
+  <div class="section-links">
+      <a href="user/manual/regional.html">Regional</a>
+      <a href="user/manual/translations.html">Translations</a>
+      <a href="user/manual/france.html">France</a>
+      <a href="user/manual/india.html">India</a>
+      <a href="user/manual/lower-deduction-certificate.html">Lower Deduction Certificate</a>
+      <a href="user/manual/tds-setup-india.html">Tds Setup India</a>
+      <a href="user/manual/italy.html">Italy</a>
+      <a href="user/manual/import-e-invoice.html">Import E Invoice</a>
+      <a href="user/manual/united_arab_emirates.html">United_Arab_Emirates</a>
+      <a href="user/manual/UAE-regional-fields.html">Uae Regional Fields</a>
+      <a href="user/manual/uae-vat-201-report.html">Uae Vat 201 Report</a>
+      <a href="user/manual/uae-vat-setup.html">Uae Vat Setup</a>
+      <a href="user/manual/south_africa.html">South_Africa</a>
+      <a href="user/manual/vat_audit_report.html">Vat_Audit_Report</a>
+      <a href="user/manual/simplified_ksa_vat_management_and_reporting.html">Simplified_Ksa_Vat_Management_And_Reporting</a>
+  </div>
+</details>
+<details>
+  <summary>Otros</summary>
+  <div class="section-links">
+      <a href="index.html">Index</a>
+      <a href="why-ERP.html">Why Erp</a>
+      <a href="do-i-need-an-erp.html">Do I Need An Erp</a>
+      <a href="open-source.html">Open Source</a>
+      <a href="the-champion.html">The Champion</a>
+      <a href="concepts-and-terms.html">Concepts And Terms</a>
+      <a href="getting-started-with-erpnext.html">Getting Started With Erpnext</a>
+      <a href="setting-up.html">Setting Up</a>
+      <a href="company-setup.html">Company Setup</a>
+      <a href="country.html">Country</a>
+      <a href="system-settings.html">System Settings</a>
+      <a href="global-defaults.html">Global Defaults</a>
+      <a href="session-defaults.html">Session Defaults</a>
+      <a href="domain-settings.html">Domain Settings</a>
+      <a href="set-language.html">Set Language</a>
+      <a href="set-precision.html">Set Precision</a>
+      <a href="show-hide-modules.html">Show Hide Modules</a>
+      <a href="data-management/introduction.html">Introduction</a>
+      <a href="data-import.html">Data Import</a>
+      <a href="chart-of-accounts-importer.html">Chart Of Accounts Importer</a>
+      <a href="data-export.html">Data Export</a>
+      <a href="download-backup.html">Download Backup</a>
+      <a href="bulk-update.html">Bulk Update</a>
+      <a href="bulk-rename.html">Bulk Rename</a>
+      <a href="delete_company_transactions.html">Delete_Company_Transactions</a>
+      <a href="personal-data-download.html">Personal Data Download</a>
+      <a href="personal-data-deletion.html">Personal Data Deletion</a>
+      <a href="export-data-for-specific-year-or-filter.html">Export Data For Specific Year Or Filter</a>
+      <a href="adding-users.html">Adding Users</a>
+      <a href="role-based-permissions.html">Role Based Permissions</a>
+      <a href="user-permissions.html">User Permissions</a>
+      <a href="administrator.html">Administrator</a>
+      <a href="sharing.html">Sharing</a>
+      <a href="change-password.html">Change Password</a>
+      <a href="how-to-disable-users-in-the-erpnext-system.html">How To Disable Users In The Erpnext System</a>
+      <a href="permissions.html">Permissions</a>
+      <a href="role-and-role-profile.html">Role And Role Profile</a>
+      <a href="role-permission-for-page-and-report.html">Role Permission For Page And Report</a>
+      <a href="changing-the-properties-of-a-field-based-on-role.html">Changing The Properties Of A Field Based On Role</a>
+      <a href="access-log.html">Access Log</a>
+      <a href="setup-two-factor-authentication.html">Setup Two Factor Authentication</a>
+      <a href="how-to-change-a-users-email-id.html">How To Change A Users Email Id</a>
+      <a href="difference-between-system-user-and-website-user.html">Difference Between System User And Website User</a>
+      <a href="setting-up-email-signature-in-erpnext.html">Setting Up Email Signature In Erpnext</a>
+      <a href="how-to-grant-permissions-for-reports.html">How To Grant Permissions For Reports</a>
+      <a href="user-permission-based-on-hierarchy.html">User Permission Based On Hierarchy</a>
+      <a href="how-to-fix-the-reached-maximum-user-limit-for-your-subscription-issue.html">How To Fix The Reached Maximum User Limit For Your Subscription Issue</a>
+      <a href="perm-level-error-in-permission-manager.html">Perm Level Error In Permission Manager</a>
+      <a href="report-permission-error.html">Report Permission Error</a>
+      <a href="accounting/introduction.html">Introduction</a>
+      <a href="opening-and-closing.html">Opening And Closing</a>
+      <a href="accounting-masters.html">Accounting Masters</a>
+      <a href="taxes.html">Taxes</a>
+      <a href="fiscal-year.html">Fiscal Year</a>
+      <a href="opening-invoice-creation-tool.html">Opening Invoice Creation Tool</a>
+      <a href="opening-balance.html">Opening Balance</a>
+      <a href="setting-up-taxes.html">Setting Up Taxes</a>
+      <a href="chart-of-accounts.html">Chart Of Accounts</a>
+      <a href="tax-category.html">Tax Category</a>
+      <a href="finance-book.html">Finance Book</a>
+      <a href="tax-rule.html">Tax Rule</a>
+      <a href="item-tax-template.html">Item Tax Template</a>
+      <a href="types-in-tax-template.html">Types In Tax Template</a>
+      <a href="purchase-taxes-and-charges-template.html">Purchase Taxes And Charges Template</a>
+      <a href="sales-taxes-and-charges-template.html">Sales Taxes And Charges Template</a>
+      <a href="tax-withholding-category.html">Tax Withholding Category</a>
+      <a href="sales-invoice.html">Sales Invoice</a>
+      <a href="credit-note.html">Credit Note</a>
+      <a href="dunning.html">Dunning</a>
+      <a href="loyalty-program.html">Loyalty Program</a>
+      <a href="purchase-invoice.html">Purchase Invoice</a>
+      <a href="debit-note.html">Debit Note</a>
+      <a href="banking-in-erpnext.html">Banking In Erpnext</a>
+      <a href="bank.html">Bank</a>
+      <a href="bank-account.html">Bank Account</a>
+      <a href="invoice_discounting.html">Invoice_Discounting</a>
+      <a href="payment-request.html">Payment Request</a>
+      <a href="payment-order.html">Payment Order</a>
+      <a href="payment-entry.html">Payment Entry</a>
+      <a href="payment-terms.html">Payment Terms</a>
+      <a href="payment-terms-template.html">Payment Terms Template</a>
+      <a href="payment-reconciliation.html">Payment Reconciliation</a>
+      <a href="semi-auto-payment-reconciliation.html">Semi Auto Payment Reconciliation</a>
+      <a href="journal-entry.html">Journal Entry</a>
+      <a href="journal-entry-template.html">Journal Entry Template</a>
+      <a href="inter-company-journal-entry.html">Inter Company Journal Entry</a>
+      <a href="deferred-revenue.html">Deferred Revenue</a>
+      <a href="deferred-expense.html">Deferred Expense</a>
+      <a href="deferred-accounting.html">Deferred Accounting</a>
+      <a href="process-deferred-accounting.html">Process Deferred Accounting</a>
+      <a href="currency.html">Currency</a>
+      <a href="currency-exchange.html">Currency Exchange</a>
+      <a href="multi-currency-accounting.html">Multi Currency Accounting</a>
+      <a href="multi-currency-setup.html">Multi Currency Setup</a>
+      <a href="exchange-rate-revaluation.html">Exchange Rate Revaluation</a>
+      <a href="cost-center.html">Cost Center</a>
+      <a href="cost_center_allocation.html">Cost_Center_Allocation</a>
+      <a href="accounting-dimensions.html">Accounting Dimensions</a>
+      <a href="shareholder-management.html">Shareholder Management</a>
+      <a href="shareholder.html">Shareholder</a>
+      <a href="share-transfer.html">Share Transfer</a>
+      <a href="share-reports.html">Share Reports</a>
+      <a href="budget.html">Budget</a>
+      <a href="budget-revision.html">Budget Revision</a>
+      <a href="budget-variance-report.html">Budget Variance Report</a>
+      <a href="cost-center-and-budgeting.html">Cost Center And Budgeting</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="subscription-plan.html">Subscription Plan</a>
+      <a href="subscription-management.html">Subscription Management</a>
+      <a href="how-to-upgrade-subscription-plan-and-buy-add-ons.html">How To Upgrade Subscription Plan And Buy Add Ons</a>
+      <a href="update-subscription-payment-method.html">Update Subscription Payment Method</a>
+      <a href="advance-payment-entry.html">Advance Payment Entry</a>
+      <a href="accounting-period.html">Accounting Period</a>
+      <a href="period-closing-voucher.html">Period Closing Voucher</a>
+      <a href="accounting-reports.html">Accounting Reports</a>
+      <a href="general-ledger.html">General Ledger</a>
+      <a href="payment_ledger.html">Payment_Ledger</a>
+      <a href="accounts-receivable-and-payable.html">Accounts Receivable And Payable</a>
+      <a href="financial-report-template.html">Financial Report Template</a>
+      <a href="expense_report.html">Expense_Report</a>
+      <a href="payment_terms_status_report.html">Payment_Terms_Status_Report</a>
+      <a href="using-custom-api-rows-in-financial-report-template.html">Using Custom Api Rows In Financial Report Template</a>
+      <a href="bank-reconciliation.html">Bank Reconciliation</a>
+      <a href="process-statement-of-accounts.html">Process Statement Of Accounts</a>
+      <a href="accounts-settings.html">Accounts Settings</a>
+      <a href="subscription-settings.html">Subscription Settings</a>
+      <a href="currency-exchange-settings.html">Currency Exchange Settings</a>
+      <a href="discount_accounting.html">Discount_Accounting</a>
+      <a href="unreconciliation.html">Unreconciliation</a>
+      <a href="bank-transaction.html">Bank Transaction</a>
+      <a href="difference-in-total-and-valuation-in-tax-and-charges.html">Difference In Total And Valuation In Tax And Charges</a>
+      <a href="tax-on-another-tax-amount.html">Tax On Another Tax Amount</a>
+      <a href="tax-inclusive-accounting.html">Tax Inclusive Accounting</a>
+      <a href="manage-foreign-exchange-difference.html">Manage Foreign Exchange Difference</a>
+      <a href="how-to-apply-tax-on-tax.html">How To Apply Tax On Tax</a>
+      <a href="accounting-entries.html">Accounting Entries</a>
+      <a href="mode-of-payment.html">Mode Of Payment</a>
+      <a href="additional-charges-in-payment.html">Additional Charges In Payment</a>
+      <a href="handling-excess-customer-payments.html">Handling Excess Customer Payments</a>
+      <a href="quickbooks-migrator.html">Quickbooks Migrator</a>
+      <a href="immutable-ledger-in-erpnext.html">Immutable Ledger In Erpnext</a>
+      <a href="rebuild-tree.html">Rebuild Tree</a>
+      <a href="common_party_accounting.html">Common_Party_Accounting</a>
+      <a href="advance-in-separate-party-account.html">Advance In Separate Party Account</a>
+      <a href="stock-transfer-with-gst.html">Stock Transfer With Gst</a>
+      <a href="gst-for-multiple-branches.html">Gst For Multiple Branches</a>
+      <a href="update-gstr-1-data-in-gst-offline-tool.html">Update Gstr 1 Data In Gst Offline Tool</a>
+      <a href="naming-series-as-per-gst-rules.html">Naming Series As Per Gst Rules</a>
+      <a href="merging-accounts.html">Merging Accounts</a>
+      <a href="changing-parent-account.html">Changing Parent Account</a>
+      <a href="freeze-account.html">Freeze Account</a>
+      <a href="freeze-accounting-entries.html">Freeze Accounting Entries</a>
+      <a href="common-receivable-account.html">Common Receivable Account</a>
+      <a href="exchange-rate-field-frozen.html">Exchange Rate Field Frozen</a>
+      <a href="default-receivable-payable-account.html">Default Receivable Payable Account</a>
+      <a href="allocating-credit-note-and-payment.html">Allocating Credit Note And Payment</a>
+      <a href="reconcile-advance-payment-made-to-the-supplier.html">Reconcile Advance Payment Made To The Supplier</a>
+      <a href="balance-in-temporary-account.html">Balance In Temporary Account</a>
+      <a href="closing-accounting-books-in-erpnext.html">Closing Accounting Books In Erpnext</a>
+      <a href="purchase-invoice-account-type-error.html">Purchase Invoice Account Type Error</a>
+      <a href="fiscal-year-error.html">Fiscal Year Error</a>
+      <a href="round-off-account-validation.html">Round Off Account Validation</a>
+      <a href="delete-entries-linked-with-gl-entries.html">Delete Entries Linked With Gl Entries</a>
+      <a href="invoice-rounding-issue.html">Invoice Rounding Issue</a>
+      <a href="customise-cash-flow-report.html">Customise Cash Flow Report</a>
+      <a href="difference-entry-button.html">Difference Entry Button</a>
+      <a href="post-dated-cheque-entry.html">Post Dated Cheque Entry</a>
+      <a href="adjusting-withhold-amount.html">Adjusting Withhold Amount</a>
+      <a href="single-payment-multiple-invoices.html">Single Payment Multiple Invoices</a>
+      <a href="withdrawing-salary-from-owners-equity-account.html">Withdrawing Salary From Owners Equity Account</a>
+      <a href="managing-invoice-discount-in-the-payment-entry.html">Managing Invoice Discount In The Payment Entry</a>
+      <a href="adding-reference-to-journal-entry.html">Adding Reference To Journal Entry</a>
+      <a href="book-discount-allowed-and-received-separately.html">Book Discount Allowed And Received Separately</a>
+      <a href="accounting-for-bad-debts.html">Accounting For Bad Debts</a>
+      <a href="petty-cash-entry-in-erpnext.html">Petty Cash Entry In Erpnext</a>
+      <a href="debit-note-for-price-adjustment.html">Debit Note For Price Adjustment</a>
+      <a href="payment-entry-for-capital-account.html">Payment Entry For Capital Account</a>
+      <a href="accounts/articles/managing-transactions-in-multiple-currencies.html">Managing Transactions In Multiple Currencies</a>
+      <a href="assets/introduction.html">Introduction</a>
+      <a href="asset-category.html">Asset Category</a>
+      <a href="asset-location.html">Asset Location</a>
+      <a href="purchasing-an-asset.html">Purchasing An Asset</a>
+      <a href="asset.html">Asset</a>
+      <a href="asset-depreciation.html">Asset Depreciation</a>
+      <a href="depreciation-methods.html">Depreciation Methods</a>
+      <a href="daily-depreciation.html">Daily Depreciation</a>
+      <a href="asset-shift-allocation.html">Asset Shift Allocation</a>
+      <a href="asset-maintenance.html">Asset Maintenance</a>
+      <a href="asset-maintenance-team.html">Asset Maintenance Team</a>
+      <a href="asset-maintenance-log.html">Asset Maintenance Log</a>
+      <a href="asset-movement.html">Asset Movement</a>
+      <a href="asset-repair.html">Asset Repair</a>
+      <a href="asset-value-adjustment.html">Asset Value Adjustment</a>
+      <a href="asset-capitalization.html">Asset Capitalization</a>
+      <a href="selling-an-asset.html">Selling An Asset</a>
+      <a href="scrapping-an-asset.html">Scrapping An Asset</a>
+      <a href="asset-reports.html">Asset Reports</a>
+      <a href="moving-asset-from-stock-item-to-fixed-asset-item.html">Moving Asset From Stock Item To Fixed Asset Item</a>
+      <a href="buying.html">Buying</a>
+      <a href="supplier-essentials.html">Supplier Essentials</a>
+      <a href="supplier-group.html">Supplier Group</a>
+      <a href="supplier.html">Supplier</a>
+      <a href="buying-settings.html">Buying Settings</a>
+      <a href="purchase-transactions.html">Purchase Transactions</a>
+      <a href="material-request.html">Material Request</a>
+      <a href="purchase-return.html">Purchase Return</a>
+      <a href="request-for-quotation.html">Request For Quotation</a>
+      <a href="supplier-quotation.html">Supplier Quotation</a>
+      <a href="purchase-order.html">Purchase Order</a>
+      <a href="how-to-create-a-supplier-quotation-through-the-supplier-portal.html">How To Create A Supplier Quotation Through The Supplier Portal</a>
+      <a href="supplier-scorecard.html">Supplier Scorecard</a>
+      <a href="customer-portal.html">Customer Portal</a>
+      <a href="buying_reports.html">Buying_Reports</a>
+      <a href="procurement-tracker-report.html">Procurement Tracker Report</a>
+      <a href="maintaining-suppliers-part-no-in-item.html">Maintaining Suppliers Part No In Item</a>
+      <a href="purchasing-in-different-unit.html">Purchasing In Different Unit</a>
+      <a href="amending-purchase-order-after-submit.html">Amending Purchase Order After Submit</a>
+      <a href="calculatin-freight-in-taxes-in-erpnext.html">Calculatin Freight In Taxes In Erpnext</a>
+      <a href="can-we-fetch-shipping-charges-based-items-value-or-weight-in-po.html">Can We Fetch Shipping Charges Based Items Value Or Weight In Po</a>
+      <a href="item-creation-not-required-in-purchase-invoice.html">Item Creation Not Required In Purchase Invoice</a>
+      <a href="procurement-cycle-overview.html">Procurement Cycle Overview</a>
+      <a href="selling.html">Selling</a>
+      <a href="selling-essentials.html">Selling Essentials</a>
+      <a href="customer.html">Customer</a>
+      <a href="customer-group.html">Customer Group</a>
+      <a href="territory.html">Territory</a>
+      <a href="contact.html">Contact</a>
+      <a href="address.html">Address</a>
+      <a href="address-template.html">Address Template</a>
+      <a href="terms-and-conditions.html">Terms And Conditions</a>
+      <a href="selling-settings.html">Selling Settings</a>
+      <a href="selling-transactions.html">Selling Transactions</a>
+      <a href="quotation.html">Quotation</a>
+      <a href="sales-order.html">Sales Order</a>
+      <a href="blanket-order.html">Blanket Order</a>
+      <a href="drop-shipping-in-erpnext.html">Drop Shipping In Erpnext</a>
+      <a href="credit-limit.html">Credit Limit</a>
+      <a href="sales-partner.html">Sales Partner</a>
+      <a href="sales-return.html">Sales Return</a>
+      <a href="inter-company-invoices.html">Inter Company Invoices</a>
+      <a href="sales-person.html">Sales Person</a>
+      <a href="calculate-incentive-for-sales-team.html">Calculate Incentive For Sales Team</a>
+      <a href="promotional-scheme.html">Promotional Scheme</a>
+      <a href="sales-integration.html">Sales Integration</a>
+      <a href="sales-analytics.html">Sales Analytics</a>
+      <a href="sales-invoice-without-an-item.html">Sales Invoice Without An Item</a>
+      <a href="sales-person-target-allocation.html">Sales Person Target Allocation</a>
+      <a href="setting-company-sales-goal.html">Setting Company Sales Goal</a>
+      <a href="how-to-give-commission-to-sales-partner.html">How To Give Commission To Sales Partner</a>
+      <a href="setting-up-buy-1-get-1-free-pricing-rule.html">Setting Up Buy 1 Get 1 Free Pricing Rule</a>
+      <a href="Selling-in-different-UOM.html">Selling In Different Uom</a>
+      <a href="need-to-change-rate-of-items-during-sales-cycle.html">Need To Change Rate Of Items During Sales Cycle</a>
+      <a href="assistance-sales-purchase-between-companies.html">Assistance Sales Purchase Between Companies</a>
+      <a href="request-for-raw-materials-from-sales-order.html">Request For Raw Materials From Sales Order</a>
+      <a href="applying-discount.html">Applying Discount</a>
+      <a href="amending-sales-order-after-submit.html">Amending Sales Order After Submit</a>
+      <a href="close-sales-order.html">Close Sales Order</a>
+      <a href="how-to-short-close-multiple-orders-in-erpnext.html">How To Short Close Multiple Orders In Erpnext</a>
+      <a href="incoterm-and-named-place.html">Incoterm And Named Place</a>
+      <a href="sales-persons-in-the-sales-transactions.html">Sales Persons In The Sales Transactions</a>
+      <a href="sales-return-use-cases.html">Sales Return Use Cases</a>
+      <a href="adding-margin.html">Adding Margin</a>
+      <a href="stock.html">Stock</a>
+      <a href="stock-masters.html">Stock Masters</a>
+      <a href="warehouse.html">Warehouse</a>
+      <a href="item.html">Item</a>
+      <a href="item-group.html">Item Group</a>
+      <a href="uom.html">Uom</a>
+      <a href="serial-and-batch.html">Serial And Batch</a>
+      <a href="item-variants.html">Item Variants</a>
+      <a href="item-attribute.html">Item Attribute</a>
+      <a href="brand.html">Brand</a>
+      <a href="manufacturer.html">Manufacturer</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="price-lists.html">Price Lists</a>
+      <a href="item-price.html">Item Price</a>
+      <a href="opening-stock.html">Opening Stock</a>
+      <a href="stock-settings.html">Stock Settings</a>
+      <a href="accounting-of-inventory-stock.html">Accounting Of Inventory Stock</a>
+      <a href="perpetual-inventory.html">Perpetual Inventory</a>
+      <a href="periodic-inventory.html">Periodic Inventory</a>
+      <a href="stock-transactions.html">Stock Transactions</a>
+      <a href="purchase-receipt.html">Purchase Receipt</a>
+      <a href="delivery-note.html">Delivery Note</a>
+      <a href="stock-entry.html">Stock Entry</a>
+      <a href="product-bundle.html">Product Bundle</a>
+      <a href="stock-reconciliation.html">Stock Reconciliation</a>
+      <a href="stock-reservation.html">Stock Reservation</a>
+      <a href="pricing-rule.html">Pricing Rule</a>
+      <a href="stock-inspection.html">Stock Inspection</a>
+      <a href="batch.html">Batch</a>
+      <a href="serial-no.html">Serial No</a>
+      <a href="serial-and-batch-bundle.html">Serial And Batch Bundle</a>
+      <a href="delivery-trip.html">Delivery Trip</a>
+      <a href="track-purchases-in-accounts.html">Track Purchases In Accounts</a>
+      <a href="stock-transactions-landed-cost-voucher.html">Stock Transactions Landed Cost Voucher</a>
+      <a href="quality-inspection.html">Quality Inspection</a>
+      <a href="stock-adjustment-cogs-with-negative-stock.html">Stock Adjustment Cogs With Negative Stock</a>
+      <a href="stock-closing-entry.html">Stock Closing Entry</a>
+      <a href="disassembly-order.html">Disassembly Order</a>
+      <a href="inventory-account.html">Inventory Account</a>
+      <a href="inventory_dimension.html">Inventory_Dimension</a>
+      <a href="managing-batch-wise-inventory.html">Managing Batch Wise Inventory</a>
+      <a href="retain-sample-stock.html">Retain Sample Stock</a>
+      <a href="auto-creation-of-material-request.html">Auto Creation Of Material Request</a>
+      <a href="item-alternative.html">Item Alternative</a>
+      <a href="shipment.html">Shipment</a>
+      <a href="installation-note.html">Installation Note</a>
+      <a href="pick-list.html">Pick List</a>
+      <a href="putaway-rule.html">Putaway Rule</a>
+      <a href="packing-slip.html">Packing Slip</a>
+      <a href="landed-cost-voucher.html">Landed Cost Voucher</a>
+      <a href="rules.html">Rules</a>
+      <a href="projected-quantity.html">Projected Quantity</a>
+      <a href="stock-reposting-settings.html">Stock Reposting Settings</a>
+      <a href="stock-ledger.html">Stock Ledger</a>
+      <a href="stock-level-report.html">Stock Level Report</a>
+      <a href="quick-stock-balance.html">Quick Stock Balance</a>
+      <a href="closing-stock-balance.html">Closing Stock Balance</a>
+      <a href="stock-value-account-value-comparison.html">Stock Value Account Value Comparison</a>
+      <a href="stock/reports/negative-batch-report.html">Negative Batch Report</a>
+      <a href="change-valuation-method.html">Change Valuation Method</a>
+      <a href="managing-fractions-in-uom.html">Managing Fractions In Uom</a>
+      <a href="serial-no-naming.html">Serial No Naming</a>
+      <a href="delivery-note-stock-error.html">Delivery Note Stock Error</a>
+      <a href="maintain-stock-field-frozen-in-item-master.html">Maintain Stock Field Frozen In Item Master</a>
+      <a href="not-able-to-select-has-serial-no-batch-option-in-item-list.html">Not Able To Select Has Serial No Batch Option In Item List</a>
+      <a href="stock-balance-and-stock-account-balance-not-in-sync.html">Stock Balance And Stock Account Balance Not In Sync</a>
+      <a href="warehouse-ledger-link.html">Warehouse Ledger Link</a>
+      <a href="allow-over-delivery-billing-against-sales-order-upto-certain-limit.html">Allow Over Delivery Billing Against Sales Order Upto Certain Limit</a>
+      <a href="item-codification.html">Item Codification</a>
+      <a href="track-items-using-barcode.html">Track Items Using Barcode</a>
+      <a href="item-valuation-transactions.html">Item Valuation Transactions</a>
+      <a href="calculation-of-valuation-rate-in-fifo-and-moving-average.html">Calculation Of Valuation Rate In Fifo And Moving Average</a>
+      <a href="how-is-valuation-rate-of-serialised-item-calculated-in-erpnext.html">How Is Valuation Rate Of Serialised Item Calculated In Erpnext</a>
+      <a href="perpetual-inventory-for-non-stock-item.html">Perpetual Inventory For Non Stock Item</a>
+      <a href="material-transfer-from-delivery-note.html">Material Transfer From Delivery Note</a>
+      <a href="migrate-to-perpetual-inventory.html">Migrate To Perpetual Inventory</a>
+      <a href="stock-received-but-not-billed.html">Stock Received But Not Billed</a>
+      <a href="opening-stock-balance-entry-for-serialized-and-batch-item.html">Opening Stock Balance Entry For Serialized And Batch Item</a>
+      <a href="stock-entry-purpose.html">Stock Entry Purpose</a>
+      <a href="repack-entry.html">Repack Entry</a>
+      <a href="update-stock-option-in-sales-invoice.html">Update Stock Option In Sales Invoice</a>
+      <a href="return-rejected-item.html">Return Rejected Item</a>
+      <a href="point-of-sale.html">Point Of Sale</a>
+      <a href="point-of-sale/setup.html">Setup</a>
+      <a href="pos-profile.html">Pos Profile</a>
+      <a href="pos-workflows.html">Pos Workflows</a>
+      <a href="pos-invoice-consolidation.html">Pos Invoice Consolidation</a>
+      <a href="loyalty-points-redemption-in-pos.html">Loyalty Points Redemption In Pos</a>
+      <a href="manufacturing.html">Manufacturing</a>
+      <a href="manufacturing-dashboard.html">Manufacturing Dashboard</a>
+      <a href="bill-of-materials.html">Bill Of Materials</a>
+      <a href="workstation_type.html">Workstation_Type</a>
+      <a href="operation.html">Operation</a>
+      <a href="workstation.html">Workstation</a>
+      <a href="routing.html">Routing</a>
+      <a href="production-and-material-planning.html">Production And Material Planning</a>
+      <a href="track-semi-finished-goods.html">Track Semi Finished Goods</a>
+      <a href="capacity-planning.html">Capacity Planning</a>
+      <a href="capacity-planning-based-on-production-order.html">Capacity Planning Based On Production Order</a>
+      <a href="production-and-material-planning-capacity-planning.html">Production And Material Planning Capacity Planning</a>
+      <a href="downtime-entry.html">Downtime Entry</a>
+      <a href="secondary-items.html">Secondary Items</a>
+      <a href="bom-update-tool.html">Bom Update Tool</a>
+      <a href="bom-comparison-tool.html">Bom Comparison Tool</a>
+      <a href="bom-creator.html">Bom Creator</a>
+      <a href="production-plan.html">Production Plan</a>
+      <a href="work-order.html">Work Order</a>
+      <a href="job-card.html">Job Card</a>
+      <a href="plant-floor.html">Plant Floor</a>
+      <a href="manufacturing-reports.html">Manufacturing Reports</a>
+      <a href="work-order-summary.html">Work Order Summary</a>
+      <a href="bom-search.html">Bom Search</a>
+      <a href="job-card-summary.html">Job Card Summary</a>
+      <a href="bom-stock-report.html">Bom Stock Report</a>
+      <a href="bom-operation-time.html">Bom Operation Time</a>
+      <a href="bom_explorer.html">Bom_Explorer</a>
+      <a href="open-work-orders.html">Open Work Orders</a>
+      <a href="demand-driven-forecasting.html">Demand Driven Forecasting</a>
+      <a href="production-planning-report.html">Production Planning Report</a>
+      <a href="quality-inspction-summary.html">Quality Inspction Summary</a>
+      <a href="production-analytics.html">Production Analytics</a>
+      <a href="downtime-analysis.html">Downtime Analysis</a>
+      <a href="work-order-consumed-materials.html">Work Order Consumed Materials</a>
+      <a href="returned_materials_against_work_order.html">Returned_Materials_Against_Work_Order</a>
+      <a href="consumed-materials-in-production.html">Consumed Materials In Production</a>
+      <a href="bom-stock-analysis.html">Bom Stock Analysis</a>
+      <a href="bom-costing-in-different-currency.html">Bom Costing In Different Currency</a>
+      <a href="managing-multi-level-bom.html">Managing Multi Level Bom</a>
+      <a href="valuation-based-on-field-in-bom.html">Valuation Based On Field In Bom</a>
+      <a href="material_consumption.html">Material_Consumption</a>
+      <a href="manufacturing-without-creating-bom.html">Manufacturing Without Creating Bom</a>
+      <a href="how-to-handle-a-scenario-of-1-raw-material-multiple-finish-goods.html">How To Handle A Scenario Of 1 Raw Material Multiple Finish Goods</a>
+      <a href="customer-provided-items.html">Customer Provided Items</a>
+      <a href="scrap-management.html">Scrap Management</a>
+      <a href="manufacturing-settings.html">Manufacturing Settings</a>
+      <a href="quality-management.html">Quality Management</a>
+      <a href="quality_goal.html">Quality_Goal</a>
+      <a href="quality_procedure.html">Quality_Procedure</a>
+      <a href="quality_review.html">Quality_Review</a>
+      <a href="quality_action.html">Quality_Action</a>
+      <a href="non-conformance.html">Non Conformance</a>
+      <a href="quality-feedback-template.html">Quality Feedback Template</a>
+      <a href="quality_feedback.html">Quality_Feedback</a>
+      <a href="quality_meeting.html">Quality_Meeting</a>
+      <a href="subcontracting-in-erpnext.html">Subcontracting In Erpnext</a>
+      <a href="subcontracting.html">Subcontracting</a>
+      <a href="subcontracting-inward.html">Subcontracting Inward</a>
+      <a href="subcontracting/reports.html">Reports</a>
+      <a href="projects-introduction.html">Projects Introduction</a>
+      <a href="projects/introduction/getting-started.html">Getting Started</a>
+      <a href="projects/project-settings.html">Project Settings</a>
+      <a href="project-type.html">Project Type</a>
+      <a href="project-template.html">Project Template</a>
+      <a href="activity-type.html">Activity Type</a>
+      <a href="activity-cost.html">Activity Cost</a>
+      <a href="project.html">Project</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="project-views.html">Project Views</a>
+      <a href="project-update.html">Project Update</a>
+      <a href="project-customer-portal.html">Project Customer Portal</a>
+      <a href="time-tracking.html">Time Tracking</a>
+      <a href="timesheets.html">Timesheets</a>
+      <a href="time-based-payout.html">Time Based Payout</a>
+      <a href="sales-invoice-from-timesheet.html">Sales Invoice From Timesheet</a>
+      <a href="salary-slip-from-timesheet.html">Salary Slip From Timesheet</a>
+      <a href="project-costing.html">Project Costing</a>
+      <a href="project-profitability.html">Project Profitability</a>
+      <a href="project-expense-claims.html">Project Expense Claims</a>
+      <a href="project-reports.html">Project Reports</a>
+      <a href="make-a-colorful-gantt-chart.html">Make A Colorful Gantt Chart</a>
+      <a href="bulk-assign-tasks-in-a-project.html">Bulk Assign Tasks In A Project</a>
+      <a href="CRM.html">Crm</a>
+      <a href="crm-masters.html">Crm Masters</a>
+      <a href="lead_source.html">Lead_Source</a>
+      <a href="opportunity_type.html">Opportunity_Type</a>
+      <a href="campaign.html">Campaign</a>
+      <a href="crm_settings.html">Crm_Settings</a>
+      <a href="lead.html">Lead</a>
+      <a href="opportunity.html">Opportunity</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="sales_stage.html">Sales_Stage</a>
+      <a href="contract.html">Contract</a>
+      <a href="email-campaign.html">Email Campaign</a>
+      <a href="email_group.html">Email_Group</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="appointment-booking-settings.html">Appointment Booking Settings</a>
+      <a href="social-media-settings.html">Social Media Settings</a>
+      <a href="twitter-settings.html">Twitter Settings</a>
+      <a href="linkedin-settings.html">Linkedin Settings</a>
+      <a href="crm_reports.html">Crm_Reports</a>
+      <a href="sales-pipeline.html">Sales Pipeline</a>
+      <a href="sales_funnel.html">Sales_Funnel</a>
+      <a href="difference_between_lead_contact_and_customer.html">Difference_Between_Lead_Contact_And_Customer</a>
+      <a href="automate_lead_capturing.html">Automate_Lead_Capturing</a>
+      <a href="support-issues.html">Support Issues</a>
+      <a href="support-settings.html">Support Settings</a>
+      <a href="service-level-agreement.html">Service Level Agreement</a>
+      <a href="support_reports.html">Support_Reports</a>
+      <a href="warranty.html">Warranty</a>
+      <a href="warranty-claim.html">Warranty Claim</a>
+      <a href="issue.html">Issue</a>
+      <a href="issue-type-and-priority.html">Issue Type And Priority</a>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="maintenance-visit.html">Maintenance Visit</a>
+      <a href="maintenance-schedule.html">Maintenance Schedule</a>
+      <a href="automating-issue-assignments-to-support-team-in-erpnext.html">Automating Issue Assignments To Support Team In Erpnext</a>
+      <a href="doctype.html">Doctype</a>
+      <a href="naming-series.html">Naming Series</a>
+      <a href="document-naming-settings.html">Document Naming Settings</a>
+      <a href="document-naming.html">Document Naming</a>
+      <a href="field-types.html">Field Types</a>
+      <a href="geolocation-field.html">Geolocation Field</a>
+      <a href="table-multiselect-field.html">Table Multiselect Field</a>
+      <a href="dynamic-link-fields.html">Dynamic Link Fields</a>
+      <a href="electronic-signature.html">Electronic Signature</a>
+      <a href="creating-custom-link-field.html">Creating Custom Link Field</a>
+      <a href="document-versioning.html">Document Versioning</a>
+      <a href="renaming-documents.html">Renaming Documents</a>
+      <a href="duplicate-record.html">Duplicate Record</a>
+      <a href="edit-submitted-document.html">Edit Submitted Document</a>
+      <a href="delete-submitted-document.html">Delete Submitted Document</a>
+      <a href="restore-deleted-erpnext.html">Restore Deleted Erpnext</a>
+      <a href="how-to-restore-deleted-documents-in-erpnext.html">How To Restore Deleted Documents In Erpnext</a>
+      <a href="copy-pasting-multiple-records-from-excel.html">Copy Pasting Multiple Records From Excel</a>
+      <a href="check-link-between-documents.html">Check Link Between Documents</a>
+      <a href="managing-tree-structure-masters.html">Managing Tree Structure Masters</a>
+      <a href="tree-master-renaming.html">Tree Master Renaming</a>
+      <a href="naming-series-current-value.html">Naming Series Current Value</a>
+      <a href="company-wise-naming-series.html">Company Wise Naming Series</a>
+      <a href="custom-field.html">Custom Field</a>
+      <a href="customize-form.html">Customize Form</a>
+      <a href="document-title.html">Document Title</a>
+      <a href="workspace.html">Workspace</a>
+      <a href="customizing-module-visibility.html">Customizing Module Visibility</a>
+      <a href="setting-default-values-for-any-field-in-erpnext.html">Setting Default Values For Any Field In Erpnext</a>
+      <a href="fetching-data-from-a-document.html">Fetching Data From A Document</a>
+      <a href="how-to-add-master-link-and-fetch-data-from-the-same.html">How To Add Master Link And Fetch Data From The Same</a>
+      <a href="customizing-data-visibility-in-child-table.html">Customizing Data Visibility In Child Table</a>
+      <a href="customizing-sorting-order-in-the-list-view.html">Customizing Sorting Order In The List View</a>
+      <a href="search-record-by-specific-field.html">Search Record By Specific Field</a>
+      <a href="disable-rounded-total.html">Disable Rounded Total</a>
+      <a href="document-title-with-multiple-fields.html">Document Title With Multiple Fields</a>
+      <a href="editing-a-field-after-submission.html">Editing A Field After Submission</a>
+      <a href="maximum-number-of-fields-in-a-form.html">Maximum Number Of Fields In A Form</a>
+      <a href="client-scripts.html">Client Scripts</a>
+      <a href="filter-options-in-select-field.html">Filter Options In Select Field</a>
+      <a href="fetch value in child table field.html">Fetch Value In Child Table Field</a>
+      <a href="fetch-values-from-master.html">Fetch Values From Master</a>
+      <a href="fetch-the-entire-address-text-on-a-custom-field.html">Fetch The Entire Address Text On A Custom Field</a>
+      <a href="generate-item-code-based-on-custom-logic.html">Generate Item Code Based On Custom Logic</a>
+      <a href="printing.html">Printing</a>
+      <a href="print-format.html">Print Format</a>
+      <a href="print-format-builder.html">Print Format Builder</a>
+      <a href="print-settings.html">Print Settings</a>
+      <a href="print-style.html">Print Style</a>
+      <a href="print.html">Print</a>
+      <a href="letter-head.html">Letter Head</a>
+      <a href="print-headings.html">Print Headings</a>
+      <a href="cheque-print-template.html">Cheque Print Template</a>
+      <a href="raw-printing.html">Raw Printing</a>
+      <a href="records-print-format.html">Records Print Format</a>
+      <a href="custom-translations.html">Custom Translations</a>
+      <a href="add-remove-fields-from-print-format.html">Add Remove Fields From Print Format</a>
+      <a href="customise-your-items-tables-within-your-print-format-builder.html">Customise Your Items Tables Within Your Print Format Builder</a>
+      <a href="making-fields-visible-in-print-format.html">Making Fields Visible In Print Format</a>
+      <a href="removing-description-removed-item-code-and-name.html">Removing Description Removed Item Code And Name</a>
+      <a href="remove-link-at-the-bottom-of-the-print-page.html">Remove Link At The Bottom Of The Print Page</a>
+      <a href="centavo-being-printed-in-words-for-usd.html">Centavo Being Printed In Words For Usd</a>
+      <a href="fetch-child-table-values-using-jinja-tags.html">Fetch Child Table Values Using Jinja Tags</a>
+      <a href="prepared-report.html">Prepared Report</a>
+      <a href="making-custom-reports.html">Making Custom Reports</a>
+      <a href="deleting-custom-reports.html">Deleting Custom Reports</a>
+      <a href="letter-head-in-the-report.html">Letter Head In The Report</a>
+      <a href="how-to-add-columns-in-the-standard-report-and-export.html">How To Add Columns In The Standard Report And Export</a>
+      <a href="email.html">Email</a>
+      <a href="email-domain.html">Email Domain</a>
+      <a href="email-account.html">Email Account</a>
+      <a href="email-template.html">Email Template</a>
+      <a href="email-digest.html">Email Digest</a>
+      <a href="email-dropbox.html">Email Dropbox</a>
+      <a href="email-inbox.html">Email Inbox</a>
+      <a href="linking-emails-to-document.html">Linking Emails To Document</a>
+      <a href="sending-email.html">Sending Email</a>
+      <a href="auto-email-reports.html">Auto Email Reports</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="document-follow.html">Document Follow</a>
+      <a href="sms-setting.html">Sms Setting</a>
+      <a href="include-document-link-in-notification-email.html">Include Document Link In Notification Email</a>
+      <a href="adding-attachments-to-outgoing-messages.html">Adding Attachments To Outgoing Messages</a>
+      <a href="configuring-a-reply-to-email-address-in-erpnext.html">Configuring A Reply To Email Address In Erpnext</a>
+      <a href="setting-up-sendgrid-smtp-email-in-erpnext.html">Setting Up Sendgrid Smtp Email In Erpnext</a>
+      <a href="email-error.html">Email Error</a>
+      <a href="what-if-emails-are-not-being-received-by-the-recipients.html">What If Emails Are Not Being Received By The Recipients</a>
+      <a href="how-to-sync-doc-types-with-calendar.html">How To Sync Doc Types With Calendar</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="workflow.html">Workflow</a>
+      <a href="workflow-state.html">Workflow State</a>
+      <a href="workflow-actions.html">Workflow Actions</a>
+      <a href="workflow-transition-tasks.html">Workflow Transition Tasks</a>
+      <a href="authorization-rule.html">Authorization Rule</a>
+      <a href="easy-steps-to-setup-workflow.html">Easy Steps To Setup Workflow</a>
+      <a href="setting-workflows-on-masters.html">Setting Workflows On Masters</a>
+      <a href="automation.html">Automation</a>
+      <a href="assignment-rule.html">Assignment Rule</a>
+      <a href="auto-repeat.html">Auto Repeat</a>
+      <a href="milestone-tracker.html">Milestone Tracker</a>
+      <a href="erpnext_integration.html">Erpnext_Integration</a>
+      <a href="google_settings.html">Google_Settings</a>
+      <a href="ldap-integration.html">Ldap Integration</a>
+      <a href="google_calendar.html">Google_Calendar</a>
+      <a href="fairlogin-integration.html">Fairlogin Integration</a>
+      <a href="google_contacts.html">Google_Contacts</a>
+      <a href="dropbox-backup.html">Dropbox Backup</a>
+      <a href="google_maps.html">Google_Maps</a>
+      <a href="google_drive.html">Google_Drive</a>
+      <a href="aws_s3.html">Aws_S3</a>
+      <a href="plaid_integration.html">Plaid_Integration</a>
+      <a href="shopify_integration.html">Shopify_Integration</a>
+      <a href="woocommerce_integration.html">Woocommerce_Integration</a>
+      <a href="amazon_integration.html">Amazon_Integration</a>
+      <a href="v14/user/manual/en/erpnext_integration.html">Erpnext_Integration</a>
+      <a href="unicommerce_integration.html">Unicommerce_Integration</a>
+      <a href="zenoti_integration.html">Zenoti_Integration</a>
+      <a href="erpnext_shipping.html">Erpnext_Shipping</a>
+      <a href="paypal-integration.html">Paypal Integration</a>
+      <a href="razorpay-integration.html">Razorpay Integration</a>
+      <a href="gocardless-integration.html">Gocardless Integration</a>
+      <a href="stripe-integration.html">Stripe Integration</a>
+      <a href="braintree-integration.html">Braintree Integration</a>
+      <a href="paytm-integration.html">Paytm Integration</a>
+      <a href="mpesa-integration.html">Mpesa Integration</a>
+      <a href="exotel_integration.html">Exotel_Integration</a>
+      <a href="regional.html">Regional</a>
+      <a href="translations.html">Translations</a>
+      <a href="france.html">France</a>
+      <a href="local_overrides.html">Local_Overrides</a>
+      <a href="fichier_des_ecritures_comptables.html">Fichier_Des_Ecritures_Comptables</a>
+      <a href="india.html">India</a>
+      <a href="lower-deduction-certificate.html">Lower Deduction Certificate</a>
+      <a href="tds-setup-india.html">Tds Setup India</a>
+      <a href="italy.html">Italy</a>
+      <a href="import-e-invoice.html">Import E Invoice</a>
+      <a href="taxjar_integration.html">Taxjar_Integration</a>
+      <a href="united_arab_emirates.html">United_Arab_Emirates</a>
+      <a href="UAE-regional-fields.html">Uae Regional Fields</a>
+      <a href="uae-vat-201-report.html">Uae Vat 201 Report</a>
+      <a href="uae-vat-setup.html">Uae Vat Setup</a>
+      <a href="south_africa.html">South_Africa</a>
+      <a href="vat_audit_report.html">Vat_Audit_Report</a>
+      <a href="simplified_ksa_vat_management_and_reporting.html">Simplified_Ksa_Vat_Management_And_Reporting</a>
+      <a href="regional/regional-chart-of-accounts.html">Regional Chart Of Accounts</a>
+      <a href="set_up_e_commerce.html">Set_Up_E_Commerce</a>
+      <a href="e_commerce_settings.html">E_Commerce_Settings</a>
+      <a href="website_item.html">Website_Item</a>
+      <a href="product-listing.html">Product Listing</a>
+      <a href="item_group_wise_product_listing.html">Item_Group_Wise_Product_Listing</a>
+      <a href="shopping-cart.html">Shopping Cart</a>
+      <a href="shop_by_category.html">Shop_By_Category</a>
+      <a href="coupon-code.html">Coupon Code</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="reviews_and_rating.html">Reviews_And_Rating</a>
+      <a href="e_commerce_search.html">E_Commerce_Search</a>
+      <a href="installing_redisearch_to_enable_super_fast_e_commerce_search.html">Installing_Redisearch_To_Enable_Super_Fast_E_Commerce_Search</a>
+      <a href="store-landing-page.html">Store Landing Page</a>
+      <a href="website.html">Website</a>
+      <a href="website-theme.html">Website Theme</a>
+      <a href="website-settings.html">Website Settings</a>
+      <a href="homepage.html">Homepage</a>
+      <a href="website-components.html">Website Components</a>
+      <a href="web-page.html">Web Page</a>
+      <a href="web-page-builder.html">Web Page Builder</a>
+      <a href="web-form.html">Web Form</a>
+      <a href="website-route-meta.html">Website Route Meta</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="blog-post.html">Blog Post</a>
+      <a href="portal-login.html">Portal Login</a>
+      <a href="disable-signup.html">Disable Signup</a>
+      <a href="website-home-page.html">Website Home Page</a>
+      <a href="website-banner.html">Website Banner</a>
+      <a href="how-to-setup-seo-for-your-website-on-erpnext.html">How To Setup Seo For Your Website On Erpnext</a>
+      <a href="2-step-301-redirect-in-your-erpnext-website.html">2 Step 301 Redirect In Your Erpnext Website</a>
+      <a href="feedback-request-using-web-form.html">Feedback Request Using Web Form</a>
+      <a href="help-articles.html">Help Articles</a>
+  </div>
+</details>
+  </nav>
+  <main id="content">
+    <header class="page-header">
+      <span class="lang-badge">ES</span>
+      <h1 style="margin:0; border:none; padding:0; font-size:1.4rem">Copiar y pegar varios registros desde Excel</h1>
+      <a class="lang-switch" href="../en/copy-pasting-multiple-records-from-excel.html">🇺🇸 View in English</a>
+    </header>
+    <div class="translation-note">⚠️ Traducción automática con Google Translate. Algunos términos técnicos se mantienen en inglés.</div>
+    <artículo :class="{ 'opacity-50': $store.navigation.loading, 'xl:!max-w-[100ch]': $store.sidebar?.isCollapsed }" class="w-full min-w-0 transición-opacidad duración-300 xl:max-w-[80ch]">
+<!-- Encabezado de página -->
+<header class="py-6 mb-6 borde-b borde-[var(--outline-gray-1)]">
+<!-- Móvil: Editar título anterior -->
+
+
+</encabezado>
+<!-- Contenido de la página -->
+<div class="prosa prosa-sm max-w-none desplazamiento suave" id="wiki-content">
+<p><strong>Si tiene una secuencia de registros guardados en una hoja de Excel, que deben asignarse a una tabla secundaria en ErpNg, se puede hacer lo mismo usando esta función.</strong></p>
+<p>Digamos que tiene una lista de elementos guardados en una hoja de Excel y necesita copiarla en la tabla secundaria 'Elementos' en Sales Order.</p>
+<p><strong>Pasos para copiar y pegar registros desde Excel</strong></p>
+<ul>
+<li>Prepare los datos de origen en Excel o en un editor de texto con cada columna separada por una pestaña.</li>
+</ul>
+<p><img alt="Copy Pasting" src="https://docs.frappe.io/files/using-copy-paste-1.png"/></p>
+<ul>
+<li>Arrastre para seleccionar los registros y haga clic en el botón de menú copiar o con Ctrl + C (Cmd + C) para</li>
+</ul>
+<p>Caso 1. La primera columna de la hoja de Excel debe ser el encabezado de la columna y el contenido del mismo.</p>
+<p>Caso 2. Cuando no hay un encabezado de columna definido, los datos se asignarán a las columnas visibles.</p>
+<p><img alt="Copy Pasting" src="https://docs.frappe.io/files/using-copy-paste-4.png"/></p>
+<ul>
+<li>Coloque el cursor en el campo de entrada de destino de la tabla secundaria y péguelo. A diferencia de la función de importación mediante carga de archivos, esta función de copiar y cargar. La función de pegar activará eventos de cambio de campo automáticamente.</li>
+</ul>
+<p><img alt="Copy Pasting" src="https://docs.frappe.io/files/using-copy-paste-3.gif"/></p>
+<p>Por consideraciones de rendimiento, solo debe pegar menos de 100 registros a la vez.</p>
+</div>
+<!-- Navegación anterior/siguiente -->
+
+<!-- Última actualización y widget de comentarios -->
+
+</artículo>
+  </main>
+</body>
+</html>
